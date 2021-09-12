@@ -665,10 +665,12 @@ header {
 	}
 	.title-h1 {
 		font-size: 30px;
+		line-height: 1;
 		text-align: center;
 	}
 	.title-h2 {
 		font-size: 30px;
+		line-height: 1;
 		text-align: center;
 	}
 	.first {
@@ -784,7 +786,7 @@ header {
 	.modal-item:nth-child(2n + 1) {
 		margin-right: 25px !important;
 	}
-	.modal {
+	.calc-modal {
 		height: 100% !important;
 		overflow-y: scroll;
 	}
@@ -804,7 +806,7 @@ header {
 	.modal-rows2 {
 		flex-direction: column;
 	}
-	.modal .modal-content {
+	.calc-modal .modal-content {
 		height: 100%;
 	}
 	.modal-row-item .btn-calc {
