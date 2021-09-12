@@ -94,7 +94,7 @@
 								Без опозданий
 							</li>
 						</ul>
-						<div class="btn-calc">
+						<div class="btn-calc open-modal" data-modal="calc">
 							Рассчитать стоимость
 						</div>
 					</div>
@@ -209,7 +209,7 @@
 							<br><br>
 							У нас Вы можете заказать услугу по поиску товара, производителя или <br>
 							просто самых выгодных условий.
-							<div class="btn-calc">
+							<div class="btn-calc open-modal" data-modal="call">
 								СВЯЗАТЬСЯ С НАМИ
 							</div>
 						</p>
@@ -223,7 +223,7 @@
 
 
 		<section class="plus">
-			<div class="calc-abs">
+			<div class="calc-abs open-modal" data-modal="calc">
 				<img src="image/calc.png" alt="">
 				<div class="calc-abs__text">
 					КАЛЬКУЛЯТОР  <br>
@@ -410,43 +410,43 @@
 								<div class="form-item__title">
 									Откуда
 								</div>
-								<input type="text" class="form-item__input">
+								<input type="text" class="form-item__input" placeholder="Откуда">
 							</div>
 							<div class="form-item">
 								<div class="form-item__title">
 									Куда
 								</div>
-								<input type="text" class="form-item__input">
+								<input type="text" class="form-item__input" placeholder="Куда">
 							</div>
 							<div class="form-item">
 								<div class="form-item__title">
 									Ваше имя
 								</div>
-								<input type="text" class="form-item__input">
+								<input type="text" class="form-item__input" placeholder="Ваше имя">
 							</div>
 							<div class="form-item">
 								<div class="form-item__title">
 									E-mail
 								</div>
-								<input type="text" class="form-item__input">
+								<input type="text" class="form-item__input" placeholder="E-mail">
 							</div>
 							<div class="form-item">
 								<div class="form-item__title">
 									Вес, кг
 								</div>
-								<input type="text" class="form-item__input">
+								<input type="text" class="form-item__input" placeholder="Вес, кг">
 							</div>
 							<div class="form-item">
 								<div class="form-item__title">
 									Объем, м.куб.
 								</div>
-								<input type="text" class="form-item__input">
+								<input type="text" class="form-item__input" placeholder="Объем, м.куб.">
 							</div>
 							<div class="form-item">
 								<div class="form-item__title">
 									Телефон
 								</div>
-								<input type="text" class="form-item__input">
+								<input type="text" class="form-item__input" placeholder="Телефон">
 							</div>
 							<div class="form-item">
 								<div class="form-item__title">
@@ -591,7 +591,7 @@
 					</ul>
 				</div>
 				<div class="footer-item">
-					<div class="btn-calc">
+					<div class="btn-calc open-modal" data-modal="call">
 						<img src="image/foot-phone.svg" alt="">
 						перезвоните мне
 					</div>
@@ -609,7 +609,146 @@
 	</footer>
 
 
-	
+	<div class="modal-overlay" data-modal="call">
+		<div class="modal">
+			<a class="close-modal">
+				<svg viewBox="0 0 20 20">
+					<path fill="#fff" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+				</svg>
+			</a>
+			<div class="modal-content">
+				<form class="call-form" action="">
+					<div class="title-h4">Заказать звонок</div>
+					<p class="call-text">Заполните заявку ниже и наш менеджер свяжется с Вами!</p>
+					<div class="input-block">
+						<input class="call-form-name" type="text" placeholder="Имя">
+					</div>
+					<div class="input-block">
+						<input class="call-form-phone" type="tel" placeholder="Телефон">
+					</div>
+					<button class="btn-calc">заказать звонок
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-overlay" data-modal="calc">
+		<div class="modal">
+			<a class="close-modal">
+				<svg viewBox="0 0 20 20">
+					<path fill="#fff" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+				</svg>
+			</a>
+			<div class="modal-content">
+				<div class="modal__title-h2">
+					КАЛЬКУЛЯТОР  ДОСТАВКИ
+				</div>
+				<form action="">
+					<div class="modal-rows">
+						<div class="modal-item">
+							<div class="modal__title">
+								Откуда
+							</div>
+							<input type="text" class="modal__input" placeholder="Пекин">
+						</div>
+						<div class="modal-item">
+							<div class="modal__title">
+								Куда
+							</div>
+							<input type="text" class="modal__input" placeholder="Укажите город получ...">
+						</div>
+						<div class="modal-item">
+							<div class="modal__title">
+								Вид товара
+							</div>
+							<input type="text" class="modal__input" placeholder="Электроника без АКБ">
+						</div>
+						<div class="modal-item">
+							<div class="modal__title">
+								Количество коробок
+							</div>
+							<input type="text" class="modal__input" placeholder="шт">
+						</div>
+						<div class="modal-item">
+							<div class="modal__title">
+								Инвойсовая стоимость 
+							</div>
+							<input type="text" class="modal__input" placeholder="$">
+						</div>
+						<div class="modal-item">
+							<div class="modal__title">
+								Имя
+							</div>
+							<input type="text" class="modal__input" placeholder="Имя">
+						</div>
+						<div class="modal-item">
+							<div class="modal__title">
+								E-mail
+							</div>
+							<input type="mail" class="modal__input" placeholder="E-mail">
+						</div>
+						<div class="modal-item">
+							<div class="modal__title">
+								Телефон
+							</div>
+							<input type="tel" class="modal__input" placeholder="Телефон">
+						</div>
+					</div>
+					<div class="modal-rows2">
+						<div class="modal-row-item">
+							<div class="modal-border">
+								<div class="modal__longtitle">
+									ГАБАРИТЫ ОДНОЙ КОРОБКИ (СМ)
+								</div>
+								<div class="modal-inputs">
+									<div class="modal-item">
+										<div class="modal__title">
+											Длина
+										</div>
+										<input type="text" class="modal__input" placeholder="см">
+									</div>
+									<div class="modal-item">
+										<div class="modal__title">
+											Ширина
+										</div>
+										<input type="text" class="modal__input" placeholder="см">
+									</div>
+									<div class="modal-item">
+										<div class="modal__title">
+											Высота
+										</div>
+										<input type="text" class="modal__input" placeholder="см">
+									</div>
+									<div class="modal-item">
+										<div class="modal__title">
+											Общий объем груза
+										</div>
+										<input type="text" class="modal__input" placeholder="м3">
+									</div>
+									<div class="modal-item">
+										<div class="modal__title">
+											Масса
+										</div>
+										<input type="text" class="modal__input" placeholder="кг"> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-row-item">
+							<button class="btn-calc">
+								Оставить заявку
+							</button>
+							<div class="modal-text">
+								Более точный расчет вы можете <br>
+								получить связавшись с нами!
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
 
 
