@@ -4,7 +4,7 @@ body {
 	line-height: 1.2;
 	font-family: "din-pro-condensed-medium"; 
 	color: #000;
-	background: #f2f2f2;
+	background: #fff;
 }
 a {
 	text-decoration: none;
@@ -631,17 +631,189 @@ header {
 	text-align: center;
 }
 .call-text {
-font-size: 20px;
-margin-bottom: 20px;
+	font-size: 20px;
+	margin-bottom: 20px;
 }
 .input-block {
-width: 70%;
-margin: 0 auto 25px auto;
+	width: 70%;
+	margin: 0 auto 25px auto;
 }
 .input-block input {
-width: 100%;
-padding: 10px 15px;
+	width: 100%;
+	padding: 10px 15px;
 }
 @media screen and (max-width: 576px) {
-
+	header {
+		position: relative;
+		background: #fff;
+	}
+	.header-flex {
+		flex-direction: column;
+		text-align: center;
+	}
+	.header-item {
+		margin-bottom: 15px;
+	}
+	.main {
+		height: 100%;
+	}
+	.header-flex {
+		margin: 20px 0 5px 0;
+	}
+	.main-content {
+		width: 100%;
+	}
+	.title-h1 {
+		font-size: 30px;
+		text-align: center;
+	}
+	.title-h2 {
+		font-size: 30px;
+		text-align: center;
+	}
+	.first {
+		display: block;
+		width: 100%;
+		padding: 5px 0;
+		text-align: center;
+	}
+	.last {
+		display: block;
+		width: 100%;
+		padding: 5px 0;
+		text-align: center;
+	}
+	.main-list {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.btn-calc {
+		width: 100%;
+		text-align: center;
+	}
+	.service-card__title {
+		font-size: 18px;
+	}
+	.service-card__title br {
+		display: none;
+	}
+	.service-card__text {
+		font-size: 18px;
+	}
+	.service-card__text br {
+		display: none;
+	}
+	.company__text br {
+		display: none;
+	}
+	.company::before {
+		width: 100%;
+	}
+	.plus__image {
+		display: none;
+	}
+	.calc-abs {
+		bottom: -65px;
+		padding: 10px;
+	}
+	.calc-abs img {
+		width: 50px;
+		height: 50px;
+	}
+	.work::before {
+		display: none;
+	}
+	.work {
+		background: none;
+	}
+	.work::after {
+		width: 100%;
+	}
+	.calc-content {
+		padding: 35px 25px;
+	}
+	.form-rows {
+		flex-wrap: wrap;
+	}
+	.form-item {
+		width: 45%;
+		margin-right: 0;
+	}
+	.form-item:nth-child(2n + 1) {
+		margin-right: 25px !important;
+	}
+	.form-bottom {
+		flex-direction: column;
+	}
+	.form-bottom-item:nth-child(2) {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 35px;
+	}
+	.form__text {
+		margin-top: 15px;
+	}
+	.maps-content {
+		padding: 25px;
+		top: 100px;
+		right: 8%;
+	}
+	.footer-row {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+	}
+	.footer-item {
+		margin-bottom: 25px;
+	}
+	.foot-list-item-link {
+		margin-bottom: 10px;
+	}
+	.footer-item .btn-calc {
+		padding: 15px 0;
+	}
+	.modal-rows {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.modal-item {
+		width: 45%;
+		margin-right: 0;
+	}
+	.modal-item:nth-child(2n + 1) {
+		margin-right: 25px !important;
+	}
+	.modal {
+		height: 100% !important;
+		overflow-y: scroll;
+	}
+	.modal__title-h2 {
+		margin-top: 25px;
+	}
+	.modal-inputs {
+		flex-wrap: wrap;
+	}
+	.modal-item {
+		width: 45%;
+		margin-bottom: 25px;
+	}
+	.modal-rows {
+		margin-bottom: 25px;
+	}
+	.modal-rows2 {
+		flex-direction: column;
+	}
+	.modal .modal-content {
+		height: 100%;
+	}
+	.modal-row-item .btn-calc {
+		margin-left: 0;
+	}
+	.modal-text {
+		margin-left: 0;
+	}
+	.modal-row-item {
+		margin-bottom: 25px;
+	}
 }
